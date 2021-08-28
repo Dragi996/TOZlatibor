@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    <title>Zlatibor</title>
+</head>
+
+<body>
+
+<button class="weather" onmouseover="showWeather()" onmouseleave="hideWeather()"><img src="/dragsiSunce.png"></button>
+
+<!-- vremenska prognozaaa  -->
+
+
+<div class='box hiddenDiv'>
+    <div class='wave -one'></div>
+    <div class='wave -two'></div>
+    <div class='wave -three'></div>
+    <div class="weathercon"><i class='fas fa-sun' style='color: #d36326;'></i></div>
+    <div class="info">
+      <h2 class="location"></h2>
+      <p class="date"></p>
+      <h1 class="temp"></h1>
+    </div>
+</div>
+
+
+
+<!-- vremenska prognozaaa  -->
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #04270d;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><i class="fas fa-mountain"></i> Zlatibor <br>
+                <p style="font-size: x-small; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">turistička organizacija</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">O Zlatiboru <span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novine.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Vesti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hoteli.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Ugostiteljski objekti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lokacije.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lokacije za turiste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerija.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Kontaktirajte nas</a>
+                        
+                    </li>
+                    <li style="margin-left: 20px; margin-right: 0px; border: 2px solid white;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn" style="font-size: small; color: antiquewhite;" ><a href="/pagesEng/indexEng.html"  style="color: antiquewhite;">Eng</a></button>  
+    
+                                <button type="button" class="btn" style="font-size: small; color: antiquewhite;"><a href="index.html" style="color: antiquewhite;">Srb</a></button>
+                        </div>
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item" style="height: 500px;">
+                <img src="/Photos/serbia-4299639_1920.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item active" style="height: 500px;">
+                <img src="/Photos/mountain-984083_1920.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item" style="height:500px;">
+                <img src="/Photos/mountaineering-455338_1920.jpg" class="d-block w-100" alt="...">
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div> <br> <br> 
+
+    <div class="container mx-5">
+        <div id="news">
+            <h3 style="color:#04270d; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">O Zlatiboru</h3>
+            <hr>
+        </div> <br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#04270d;">
+                            Geografske odlike Zlatibora
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        Zlatibor je planina i park prirode koji se prostire na površini od oko 1.000 km², dužine 55 km,
+                        a širine 20 km. Pruža se pravcem severozapad–jugoistok. Najviši vrh je Tornik (1.496 m).
+                        Zlatibor se prostire između 43° 31' N i 43° 51' N, i između 19° 28' E i 19° 56' E. Poznato je
+                        letovalište i zimovalište, kao i klimatsko lečilište. Obuhvata predele tri opštine Republike
+                        Srbije: Čajetinu, jedan deo opštine Užice i jedan manji deo opštine Nove Varoši.Administrativni
+                        centar Zlatibora je varošica Čajetina. Južna i istočna granica Zlatibora su reke Uvac i Veliki
+                        Rzav. Na zapadu se Zlatibor graniči sa Bosnom i Hercegovinom, selima Mokrom Gorom, Semegnjevom i
+                        Jablanicom. Zlatibor se nalazi na pola puta od Beograda do Crnogorskog i Dubrovačkog primorja.
+                        Preko njega prelaze mnogi značajni magistralni putevi i pruge, među kojima je i pruga
+                        Beograd—Bar. Najbliži veći grad je Užice.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#04270d;">
+                            Istorija Zlatibora
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Spomenici materijalne kulture govore o tome da su na Zlatiboru postojala retka praistorijska
+                        naselja iz neolitskog doba, smeštena u gustim šumama ili pored planinskih potoka i rečica. Ostaci
+                        ove kulture o čijem postojanju svedoči ornamentisana keramika, sreću se u prebivalištima tadašnjih
+                        ljudi, pećinama na strmim visovima, koji danas nose naziv gradine.
+
+                        Prvi poznati stanovnici Zlatibora bili su Iliri, odnosno njihovo pleme Partini, koje je
+                        naseljavalo širu užičku okolinu. Po čitavom ovom kraju, izuzev u njegovom centralnom delu,
+                        ostavili su mnogobrojne humke (praistorijske grobnice), za koje u narodu postoji predanje da su
+                        grčka groblja. Od starijih ljudi može se čuti ovakva priča: “Ovde su nekada živeli Grci, ali jedne
+                        godine kada je o Svetom Iliji pao sneg, napustili su Zlatibor i svoje umrle u ovim malim
+                        grobljima“. Ostaci njihove kulture - ukrašena keramika – sreću se u pećinama i na strmim visovima
+                        gde su živeli. Danas se ta mesta nazivaju "gradine" i na Zlatiboru ih ima tri (čajetinska ,
+                        krivorečka, šljivovačka).
+                        Zlatibor je u vreme Rimljana bio u sastavu rimske provincije Dalmacije, o tome su na ovim
+                        prostorima ostavili sopstvena i celoj Evropi poznata obeležja. Radi eksploatacije ovih krajeva i
+                        za vojne potrebe izgradili su mrežu poznatih puteva prema okolnim provincijama (Mačkat -
+                        čajetinska gradina - reka Uvac). Rimljani su u ovom kraju ostavili znatan broj nadgrobnih
+                        spomenika, koji uglavnom datiraju iz 2. i 3. veka. Takođe su značajni lokaliteti u Krivoj Reci i
+                        Gostilju gde se nalaze nekropole sa nadgrobnim spomenicima.
+
+                        U srednjem veku pristižu Sloveni oni su ostavili neizbrisiv trag u ovom kraju. Oni takođe grade
+                        utvrđenja i obnavljaju gradine. Na Gradcu u Dobroselici postoji utvrđenje, gde možemo videti
+                        ostatke bedema. Sačuvani su ostaci kamenog postolja koje je verovatno služilo za osmatranje.
+                        Prilikom formiranja srpske države, Zlatibor i grad Užice su pripadali županu Stracimiru, a tek
+                        oko 1180. godine Stevan Nemanja ih je priključio svojoj državi. U doba Stevana Nemanje ovi
+                        planinski, stočarski krajevi, zajedno sa čitavom užičkom okolinom, bili su u sastavu oblasti
+                        poznate pod imenom Stari Vlah. Nešto kasnije užički kraj je administrativnom podelom izdeljen na
+                        četiri župe: Rujno, Moravicu, Lužnicu i Crnu Goru.
+
+                        Osvajanjem srpske države Turci su i ovde uspostavili svoju vlast deleći Zlatibor na begerbegluke,
+                        čitluke, kadiluke i knežine kojima su upravljali srpski knezovi. Za vreme Turaka Zlatibor je
+                        delio sudbinu ostalih srpskih krajeva pa je u nemirnim vremenima bio često pustošen. Plamen
+                        prvog srpskog ustanka, koji se u proleće 1804. godine širio po čitavoj Šumadiji, zahvatio je i
+                        Zlatibor. Veliki broj Zlatiboraca prihvatio se skrivenog oružja iz Mustafa-pašinog vremena i
+                        prišao Mihailu Radoviću, organizatoru ustanka u ovom kraju. Za vreme drugog srpskog ustanka na
+                        Zlatiboru nije bilo većih borbi. Opšta amnestija za beogradski pašaluk posle pregovora sa Portom
+                        obuhvatala je delove Zlatibora jer se ovim krajem pružala granica između Beogradskog i
+                        Novopazarskog pašaluka. Zlatiborski kraj je do majskog prevrata bio naklonjen dinastiji
+                        Obrenovića. Kralj Aleksandar I Obrenović je više puta dolazio na Zlatibor gde je 20. avgusta
+                        1893. godine podigao česmu na izvoru Kulaševac koji od tada nosi naziv Kraljeva voda (Đenić,
+                        1983).
+                        U prvom i drugom balkanskom ratu Zlatiborci su bili raspoređeni u čuvenom IV pešadijskom puku
+                        „Stevan Nemanja“, koji je pripadao Drinskoj diviziji sa kojom su odneli sjajnu pobedu u bitkama
+                        kod Kumanova i Bitolja. Napadom Bugara na Srbiju, IV puk „Stevan Nemanja“ je bio uključen u bitku
+                        na BregalniciPosle pobede na solunskom frontu i oslobođenja Zlatibor je kao i cela Srbija ušao u
+                        sastav kraljevine Srba, Hrvata i Slovenaca a kasnije kraljevine Jugoslavije. Napadom nemačkih
+                        okupacionih snaga 6. aprila 1941. godine na kraljevinu Jugoslaviju, Zlatibor je došao pod nemačku
+                        opkupaciju ali ubrzo plamen narodno oslobodilačke borbe doneo je ovom kraju kratkotrajnu
+                        slobodu. Od septembra do novembra 1941. godine Zlatibor je u sastavu „Užičke republike“, jedine
+                        slobodne teritorije u okupiranoj Evropi. Posle pada „Užičke republike“ Zlatiborski kraj se našao
+                        ponovo pod nemačkom, a zatim i bugarskom okupacijom koju su pratila materijalna razarnja, pljačke
+                        i streljanja civila. Posle oslobođenja uspostavljena je narodna vlast u svim zlatiborskim opštinama
+                        i Zlatibor je ušao u sastav titovoužičkog regiona.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#04270d;">
+                            Zlatiborska naselja
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Na Zlatiboru se nalazi najrazvijeniji tip razbijenog sela.Oni zauzimaju ogromne teritorije, ponekad
+                        duge po 5–6 km, a dele se na zaseoke. Sela obično imaju više grobalja. Kuće su od borovog i hrastovog
+                        drveta, zvane brvnare ili osaćanke. Pravljene su ručnim alatom, ali veoma precizno, i postavljene su
+                        na nisku podlogu od kamena. Prozori su malih dimenzija, a vrata obavezno imaju dvoja, na suprotnim
+                        zidovima. U kući se nalaze obično dve, mada ponegde i tri prostorije. Pored ovih kuća za življenje,
+                        jedno zlatiborsko domaćinstvo je obavezno imalo još pomoćnih zgrada, npr. mlekara, štala i dr.
+                        Najlepši i najočuvaniji primerci starih zlatiborskih kuća premešteni su iz svih sela širom Zlatibora
+                        u Sirogojno, gde je napravljen etno-muzej pod vedrim nebom.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+    </div> <br><br>
+
+<footer>
+    
+        
+    <div class="info" style="display: flex; margin-left: 30px; justify-content: left; justify-items: flex-start; flex-wrap: wrap; width: 200px;" >
+        <h6>Info centar:</h6>
+        <p>Info centar Zlatibor +381 31 845 103</p>
+        <p>Dom zdravlja +381 31 3831 224</p>
+        <p>TOZ Info centar Zlatibor – +381 31 845 103</p>
+        <p>Policija +381 31 3831 222</p>
+
+    </div>
+    <div class="social">
+    
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      
+     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+     <a href="https://youtube.com" target="_blank" style="color: red;"><i class="fab fa-youtube"></i></a>
+     
+      <a href="https://instagram.com" target="_blank" style="color: brown;"><i class="fab fa-instagram"></i></a>
+    <div>
+</div>
+        
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/main.js"></script>
+        <script src="/weather.js"></script>
+</body>
+
+</html>

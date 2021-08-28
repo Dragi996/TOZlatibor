@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    <title>Zlatibor</title>
+</head>
+
+<body>
+
+<button class="weather" onmouseover="showWeather()" onmouseleave="hideWeather()"><img src="/dragsiSunce.png"></button>
+
+<!-- vremenska prognozaaa  -->
+
+
+<div class='box hiddenDiv'>
+    <div class='wave -one'></div>
+    <div class='wave -two'></div>
+    <div class='wave -three'></div>
+    <div class="weathercon"><i class='fas fa-sun' style='color: #d36326;'></i></div>
+    <div class="info">
+      <h2 class="location"></h2>
+      <p class="date"></p>
+      <h1 class="temp"></h1>
+    </div>
+</div>
+
+
+
+<!-- vremenska prognozaaa  -->
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #04270d;">
+        <div class="container">
+            <a class="navbar-brand" href="indexEng.html" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><i class="fas fa-mountain"></i> Zlatibor <br>
+                <p style="font-size: x-small; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tourist Organization</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="indexEng.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">About Zlatibor <span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locations.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Locations for tourists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact us</a>
+                    </li>
+                    <li style="margin-left: 20px; border: 2px solid white;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn" style="font-size: small; color: antiquewhite;"><a href="/pagesEng/indexEng.html"  style="color: antiquewhite;">Eng</a></button>  
+    
+                                <button type="button" class="btn" style="font-size: small; color: antiquewhite;"><a href="/pagesSerbian/index.html" style="color: antiquewhite;">Srb</a></button>
+                        </div>
+                    </li>   
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item" style="height: 500px;">
+                <img src="/Photos/serbia-4299639_1920.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item active" style="height: 500px;">
+                <img src="/Photos/mountain-984083_1920.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item" style="height:500px;">
+                <img src="/Photos/mountaineering-455338_1920.jpg" class="d-block w-100" alt="...">
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div> <br> <br>
+
+    <div class="container mx-5">
+        <div id="news">
+            <h3 style="color:#04270d; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">O Zlatiboru</h3>
+            <hr>
+        </div> <br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#04270d;">
+                            Geographical features of Zlatibor                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        Zlatibor is a mountain and nature park that covers an area of ​​about 1,000 km, 55 km long,
+                        and 20 km wide. It stretches in a northwest-southeast direction. The highest peak is Tornik (1,496 m).
+                        Zlatibor extends between 43 ° 31 'N and 43 ° 51' N, and between 19 ° 28 'E and 19 ° 56' E. It is known
+                        summer and winter resort, as well as climatic health resort. It covers the landscape of three municipalities of the Republic
+                        Serbia: Cajetina, one part of the municipality of Uzice and one smaller part of the municipality of Nova Varos. Administrative
+                        the center of Zlatibor is the town of Cajetina. The southern and eastern borders of Zlatibor are the rivers Uvac and Veliki
+                        Rzav. In the west, Zlatibor borders Bosnia and Herzegovina, the villages of Mokra Gora, Semegnjevo and
+                        Jablanica. Zlatibor is located halfway from Belgrade to the Montenegrin and Dubrovnik coasts.
+                        Many important highways and railways cross it, including the railway
+                        Belgrade — Bar. The nearest larger city is Uzice.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#04270d;">
+                            History of Zlatibor
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Monuments of material culture show that there was a rare prehistoric one on Zlatibor
+                        settlements from the Neolithic era, located in dense forests or next to mountain streams and rivers. Remains
+                        these cultures, the existence of which is evidenced by ornamented pottery, are found in the dwellings of the then
+                        people, caves on steep heights, which today bear the name of the hillfort.
+
+                        The first known inhabitants of Zlatibor were the Illyrians, ie their tribe Partini, which is
+                        inhabited the wider Užice area. Throughout this area, except in its central part,
+                        they left numerous mounds (prehistoric tombs), for which there is a tradition among the people that they are
+                        Greek cemeteries. You can hear this story from older people: “Greeks used to live here, but only one
+                        year when it snowed on St. Elijah, they left Zlatibor and died in these small ones
+                        cemeteries ”. Remains of their culture - decorated pottery - are found in caves and on steep heights
+                        where they lived. Today, these places are called "forts" and there are three of them on Zlatibor (Cajetina,
+                        krivorečka, šljivovačka).
+                        In the time of the Romans, Zlatibor was part of the Roman province of Dalmatia, they are about that
+                        left their own and familiar to the whole of Europe features. For the exploitation of these parts and
+                        for military purposes they built a network of famous roads to the surrounding provinces (Mackat -
+                        Cajetina hillfort - Uvac river). The Romans left a significant number of tombstones in this area
+                        monuments, which mostly date from the 2nd and 3rd centuries. There are also important sites in Kriva Reka and
+                        An inn where there are necropolises with tombstones.
+
+                        In the Middle Ages, the Slavs arrived, they left an indelible mark in this area. They also build
+                        fortifications and rebuilding forts. There is a fortification on Gradac in Dobroselica, where we can see
+                        the remains of the ramparts. Remains of a stone pedestal have been preserved, which was probably used for observation.
+                        During the formation of the Serbian state, Zlatibor and the city of Uzice belonged to the prefect Stracimir, and only
+                        around 1180, Stevan Nemanja annexed them to his state. In the time of Stevan Nemanja, these
+                        mountainous, cattle-breeding areas, together with the entire Užice area, were part of the area
+                        known as Stari Vlah. Somewhat later, the Užice region was divided into
+                        four parishes: Rujno, Moravica, Lužnica and Montenegro.
+
+                        With the conquest of the Serbian state, the Turks established their rule here as well, dividing Zlatibor into Begerbegluks,
+                        chitluks, kadiluks and princesses ruled by Serbian princes. It was Zlatibor during the time of the Turks
+                        shared the fate of other Serbian regions, so in turbulent times it was often devastated. Flame
+                        The first Serbian uprising, which spread throughout Šumadija in the spring of 1804, also affected
+                        Zlatibor. A large number of Zlatibor citizens accepted hidden weapons from Mustafa Pasha's time
+                        approached Mihailo Radović, the organizer of the uprising in this area. During the second Serbian uprising on
+                        There were no major fights in Zlatibor. General amnesty for the Belgrade pashaluq after negotiations with Porto
+                        it included parts of Zlatibor because this area stretched the border between Belgrade and
+                        Novi Pazar pashaluq. Until the May coup, the Zlatibor region was in favor of the dynasty
+                        Obrenović. King Alexander I Obrenović came to Zlatibor several times, where he was on August 20
+                        In 1893, he built a fountain at the source of Kulaševac, which has since been called Kraljeva voda (Đenić,
+                        1983).
+                        In the first and second Balkan wars, the people of Zlatibor were deployed in the famous IV Infantry Regiment
+                        "Stevan Nemanja", who belonged to the Drina Division with which they won a great victory in battles
+                        near Kumanovo and Bitola. With the attack of the Bulgarians on Serbia, the IV Regiment "Stevan Nemanja" was involved in the battle
+                        on BregalnicaAfter the victory on the Thessaloniki front and liberation, Zlatibor, like the whole of Serbia, entered
+                        composition of the kingdom of Serbs, Croats and Slovenes and later the kingdom of Yugoslavia. An attack by the Germans
+                        occupation forces on April 6, 1941 in the Kingdom of Yugoslavia, Zlatibor came under German rule
+                        occupation, but soon the flames of the people's liberation struggle brought this area short-lived freedom. From September to November 1941, Zlatibor was part of the "Uzice Republic", the only one
+                        free territories in occupied Europe. After the fall of the "Republic of Užice", the Zlatibor region found itself
+                        again under German and then Bulgarian occupation followed by material destruction, looting
+                        and the shooting of civilians. After the liberation, the people's government was established in all Zlatibor municipalities
+                        and Zlatibor became part of the Tito-Uzice region.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#04270d;">
+                            Zlatibor settlements
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Zlatibor is home to the most developed type of broken village. They occupy huge territories, sometimes
+        5-6 km long, and are divided into hamlets. Villages usually have multiple cemeteries. The houses are made of pine and oak
+        trees, called log cabins or osaćanke. They are made with hand tools, but very precisely, and they are set
+        on a low stone base. The windows are small in size, and the doors must have two, on the opposite
+        walls. There are usually two, although sometimes three rooms in the house. In addition to these living houses,
+        one Zlatibor household necessarily had more auxiliary buildings, e.g. dairy, barn, etc.
+        The most beautiful and best-preserved specimens of old Zlatibor houses have been moved from all villages throughout Zlatibor
+        in Sirogojno, where an open-air ethno-museum was built.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+    </div> <br><br>
+
+<footer>
+    
+        
+    <div class="info" style="display: flex; margin-left: 30px; justify-content: left; justify-items: flex-start; flex-wrap: wrap; width: 200px;" >
+        <h6>Info center:</h6>
+        <p>Info center of Zlatibor +381 31 845 103</p>
+        <p>Health center +381 31 3831 224</p>
+        <p>TOZ Info center o Zlatibor – +381 31 845 103</p>
+        <p>Police +381 31 3831 222</p>
+
+    </div>
+    <div class="social">
+    
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      
+     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+     <a href="https://youtube.com" target="_blank" style="color: red;"><i class="fab fa-youtube"></i></a>
+     
+      <a href="https://instagram.com" target="_blank" style="color: brown;"><i class="fab fa-instagram"></i></a>
+    <div>
+</div>
+        
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="main.js"></script>
+        <script src="weather.js"></script>
+</body>
+
+</html>
