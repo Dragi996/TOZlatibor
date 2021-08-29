@@ -1,0 +1,60 @@
+
+.forma {
+    margin: 0px 17%;
+}
+.forma form {
+    display: block;
+}
+.forma form label{
+    display: block;
+    margin:0px;
+}
+.forma form input,.forma form textarea {
+    width:70%;
+    margin:0px;
+    margin-top: 3px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+#submitBtn {
+    height: 30px;
+    background-color:#04270d;
+    color:white;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+}
+#submitBtn:hover{
+    background-color:#265532;
+}
+
+
+#isCorrectValidation{
+    color:rgb(182, 31, 62);
+    font-size: x-large;
+    margin:10px 0px;
+}
+.allComments{
+    padding: 0px;
+    
+}
+
+.allComments li{
+    margin-bottom: 15px;
+    list-style: none;
+    border: 1px solid rgb(180, 178, 178);
+    border-radius: 7px;
+    padding: 10px;
+    width:70%;
+}
+.allComments li .inlineDiv{
+    display: flex;
+    flex-direction: row;
+}
+.allComments h5{
+    width:80%;
+    padding-left: 3px;
+}
+.allComments span{
+    margin-top:6px;
+}

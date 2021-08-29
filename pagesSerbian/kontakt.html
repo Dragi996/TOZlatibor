@@ -4,11 +4,21 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description"
+    content="Turistička ponuda Zlatibora. Srpska planina u Zapadnoj Srbiji u Opstini Cajetina.">
+  <meta name="keywords" content="Zlatibor, Cajetina, Planina, Mountain, Gondola, Turizam, Tourism.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
-    <link rel="stylesheet" href="/kontakt.css">
-    <link rel="stylesheet" href="/index.css">
-    <title>Kontakt</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/forms.css">
+   
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+    <title>Vaši utisci</title>
+
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #04270d;">
@@ -22,7 +32,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                       <a class="nav-link" href="index.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">O Zlatiboru <span
                               class="sr-only"></span></a>
                   </li>
@@ -38,7 +48,7 @@
                   <li class="nav-item">
                       <a class="nav-link" href="galerija.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Galerija</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                       <a class="nav-link" href="kontakt.html" style="font-size: large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Kontaktirajte nas</a>
                   </li>
 
@@ -48,36 +58,44 @@
   </nav><br><br>
 
   <!-- Formaaa start -->
+<div class="forma">
+  <form>
+      <label for="inputName">Ime: </label>
+      <input type="text" name="name" id="inputName">
 
-  <div class="container">
-    <form action="action_page.php">
-  
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div><br><br>
+      <label for="inputSurname">Prezime: </label>
+      <input type="text" name="prezime" id="inputSurname">
+
+      <label for="inputEmail">Vaša e-mail adresa: </label>
+      <input type="text" name="prezime" id="inputEmail">
+      
+      <label for="comment">Vaši utisci o Zlatiboru: </label>
+      <textarea name="" id="comment" cols="30" rows="10"></textarea>
+      
+      <br>
+      <button id="submitBtn">Posalji</button> 
+  </form>
+
+  <div id="isCorrectValidation"></div> 
+
+  <ul class="allComments">
     
+  </ul> 
+</div>
     <!-- Formaaa kraaaj -->
+
+
+
+
+
+
+
+
+    <!-- //////////////////////////////// -->
     <footer>
     
         
-      <div class="info" style="display: flex; margin-left: 30px; justify-content: left; justify-items: flex-start; flex-wrap: wrap; width: 200px;" >
+      <div class="info">
           <h6>Info centar:</h6>
           <p>Info centar Zlatibor +381 31 845 103</p>
           <p>Dom zdravlja +381 31 3831 224</p>
@@ -103,7 +121,7 @@
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="/forms.js"></script>
+  <script src="/JS/forms.js"></script>
    
   </body>
 </html>
