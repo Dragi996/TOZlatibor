@@ -45,30 +45,30 @@ body {
 .info {
     color: antiquewhite;
     font-size: x-small;
-    margin-left: 3px;
-    text-align: right;
-    display: flex;
-    margin-left: 30px;
-    justify-content: left;
-    justify-items: flex-start;
-    flex-wrap: wrap;
-    width: 200px;
+  
+   
+   
+    width: 100%;
 }
 
 footer {
     background-color: #1c1c1d;
-  display: flex;
-    height: 150px; 
+  
+     
+    width: 100%;
 }
 
 
    .social {
-      margin-left: auto;
-      padding: 60px;
-      margin-right: 40px;
+      margin-right: auto;
+      
       font-size: xx-large;
       
-   }
+   } 
    .social > a {
-       margin-left: 50px;
+       
+       padding: 12px;
+   } 
+   .info > h3, .info >  p {
+       margin-left: 5px;
    }
